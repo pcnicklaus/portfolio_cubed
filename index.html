@@ -12,12 +12,15 @@
     </head>
     <body>
 
-        <input type="radio" checked id="radio-front" name="select-face"/>    
-        <input type="radio" id="radio-back" name="select-face"/>
-        <input type="radio" id="radio-left" name="select-face"/>
-        <input type="radio" id="radio-right" name="select-face"/>
-        <input type="radio" id="radio-top" name="select-face"/>
-        <input type="radio" id="radio-bottom" name="select-face"/>
+        <div>
+
+            <input type="radio" checked id="radio-front" name="select-face"/>    
+            <input type="radio" id="radio-back" name="select-face"/>
+            <input type="radio" id="radio-left" name="select-face"/>
+            <input type="radio" id="radio-right" name="select-face"/>
+            <input type="radio" id="radio-top" name="select-face"/>
+            <input type="radio" id="radio-bottom" name="select-face"/>
+        </div>
 
 
         <div></div><!-- separator -->
@@ -25,13 +28,45 @@
         
         <div class="scene">
             <div class="cube">
-                <div class="cube-face  cube-face-front"></div>
-                <div class="cube-face  cube-face-back"></div>
-                <div class="cube-face  cube-face-left"></div>
-                <div class="cube-face  cube-face-right"></div>
-                <div class="cube-face  cube-face-top"></div>
-                <div class="cube-face  cube-face-bottom"></div>
+
+                <div class="cube-face  cube-face-front">
+                    FRONT
+                </div>
+
+                <div class="cube-face  cube-face-back">
+                    BACK
+                </div>
+
+                <div class="cube-face  cube-face-left">
+                    LEFT
+                </div>
+
+                <div class="cube-face  cube-face-right">
+                    RIGHT
+                </div>
+
+                <div class="cube-face  cube-face-top">
+                    TOP
+                </div>
+
+                <div class="cube-face  cube-face-bottom">
+                    Bottom
+                </div>
+                
             </div>
         </div>
+        <p style="text-align: center;">
+            <a onclick="turnToTop()">Top</a>
+            <a onclick="turnToBottom()">Bottom</a>
+            <a onclick="turnToBack()">Back</a>
+            <a onclick="turnToLeftSide()">Left</a>
+            <a onclick="turnToRightSide()">Right</a>
+            <a onclick="turnToFront()">Front</a>
+
+        </p>
     </body>
+    
+    <script type="text/javascript" src="js/script.js"></script>
+    
+
 </html>

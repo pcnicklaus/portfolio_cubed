@@ -20,8 +20,8 @@ body {
   height: 100%; }
 
 .scene {
-  width: 100vw;
-  height: 100vh; }
+  width: 200px;
+  height: 200px; }
 
 .cube {
   width: inherit;
@@ -39,39 +39,39 @@ body {
 
 .cube-face-front {
   background: yellow;
-  transform: translate3d(0, 0, 50vw); }
+  transform: translate3d(0, 0, 100px); }
 
 .cube-face-back {
   background: orange;
-  transform: rotateY(180deg) translate3d(0, 0, 50vw); }
+  transform: rotateY(180deg) translate3d(0, 0, 100px); }
 
 .cube-face-left {
   background: green;
-  transform: rotateY(-90deg) translate3d(0, 0, 50vw); }
+  transform: rotateY(-90deg) translate3d(0, 0, 100px); }
 
 .cube-face-right {
   background: magenta;
-  transform: rotateY(90deg) translate3d(0, 0, 50vw); }
+  transform: rotateY(90deg) translate3d(0, 0, 100px); }
 
 .cube-face-top {
   background: blue;
-  transform: rotateX(90deg) translate3d(0, 0, 50vw); }
+  transform: rotateX(90deg) translate3d(0, 0, 100px); }
 
 .cube-face-bottom {
   background: red;
-  transform: rotateX(-90deg) translate3d(0, 0, 50vw); }
+  transform: rotateX(-90deg) translate3d(0, 0, 100px); }
 
-#radio-back:checked ~ .scene .cube {
+#radio-back:checked ~ .cube {
   transform: rotateY(180deg); }
 
-#radio-left:checked ~ .scene .cube {
+#radio-left:checked ~ .cube {
   transform: rotateY(90deg); }
 
-#radio-right:checked ~ .scene .cube {
+#radio-right:checked ~ .cube {
   transform: rotateY(-90deg); }
 
-#radio-top:checked ~ .scene .cube {
+#radio-top:checked ~ .cube {
   transform: rotateX(-90deg); }
 
-#radio-bottom:checked ~ .scene .cube {
+#radio-bottom:checked ~ .cube {
   transform: rotateX(90deg); }
